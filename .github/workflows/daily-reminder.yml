@@ -65,5 +65,5 @@ jobs:
           DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}
           REMINDER_TYPE: ${{ steps.determine_type.outputs.type }}
           WEEKDAY: ${{ steps.determine_type.outputs.weekday }}
-          USER_NAME: "51岁姐姐"
+          USER_NAME: "尊敬的用户"
         run: python scripts/send_reminder.py
